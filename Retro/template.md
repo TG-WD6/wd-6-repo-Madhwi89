@@ -1,4 +1,4 @@
-# Retro Week \##
+# Retro Week 1
 
 ## Wat ging goed
 1. We hadden echt een leuke groep die klaar stond voor elkaar om elkaar te helpen!
@@ -11,3 +11,17 @@
 ## Actiepunten voor volgende week
 * Niet meer verder werken na 17.00 uur maar op tijd rust pakken.
 * Niet meer "100" tabbladen open hebben staan.
+
+# Retro Week 2
+
+## Wat ging goed
+1. 
+2. 
+
+## Wat ging er minder goed
+1. 
+2. 
+
+## Actiepunten voor volgende week
+* 
+* 
