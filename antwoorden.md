@@ -17,10 +17,13 @@
 
 4. Noem een aantal nieuwe functionaliteiten van HTML5
 
-Video
-Audio
-svg
-canvas
+   video
+
+   audio
+
+   svg
+
+   canvas
 
 5. Wat zijn HTML attributen?
 6. Wat is HTML semantics?
