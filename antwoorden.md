@@ -3,8 +3,10 @@
 
 
 1. Wat is HTML?
+
    HTML is de standaard taal wat gebruikt wordt voor het schrijven van webpagina's.
 2. Hoe ziet de basis-structuur van HTML eruit?
+gi
    Je begint met een HTML tag, dit markeert het begin en het einde van heet HTML document.
    Daarna krijg je een head tag, hierin staat info over het document.
    Dan heb je een body tag, hierin staat de inhoud van het document. 
