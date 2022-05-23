@@ -189,8 +189,98 @@
             <label for="Misschien">Misschien</label><br>
             <input type="radio" id="Ik weet het niet" name="ja-nee" value="Ik weet het niet">
             <label for="Ik weet het niet">Ik weet het niet</label> <br>
+        </form>
 
+        <h3>Checkboxes</h3>
 
+        <form action="checkbox">
+            <input type="checkbox" id="auto1" name="auto1" value="Mercedes">
+            <label for="auto1"> Ik rij een Mercedes</label><br>
+            <input type="checkbox" id="auto2" name="auto2" value="BMW">
+            <label for="auto2"> Ik rij een BMW</label><br>
+            <input type="checkbox" id="auto3" name="auto3" value="Ik rij een Volkswagen">
+            <label for="auto3"> Ik rij een Volkswagen</label><br>
+            <input type="checkbox" id="geen-auto" name="lopen" value="Ik loop">
+            <label for="lopen"> Ik heb geen auto, ik loop</label><br>
+            <input type="checkbox" name="fietsen" id="geen-auto1" value="Ik fiets">
+            <label for="fietsen"> Ik heb geen auto, ik fiets</label><br><br>
+            <input type="submit" value="Submit">
+        </form>
+
+        <form action="wachtwoord">
+            <h3>Password</h3>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email"><br>
+            <label for="Password">Wachtwoord:</label>
+            <input type="password" id="wachtwoord" name="wachtwoord"><br><br>
+            <input type="submit" value="Inloggen">
+            <input type="reset" value="Reset">
+        </form>
+
+        <form action="geboortedatum">
+            <h3>Geboortedatum</h3>
+            <label for="birthday">Geboortedatum:</label>
+            <input type="date" id="geboortedatum" name="geboortedatum">
+            <input type="submit" id="indienen" name="indienen">
+        </form>
+
+        <form action="zoekveld">
+            <h3>Zoekveld</h3>
+            <label for="gsearch">Google:</label>
+            <input type="search" name="google-search" id="google-search">
+            <input type="submit" name="verzenden" id="verzenden">
+        </form>
+
+        <form action="time">
+            <h3>Tijd</h3>
+            <label for="tijd">Selecteer een tijd:</label>
+            <input type="time" name="tijd" id="tijd">
+            <input type="submit">
+        </form>
+
+        <form action="verborgen-veld">
+            <h3>Verborgen veld</h3>
+            <label for="verborgen-naam">Voornaam:</label>
+            <input type="text" id="verborgen-naam" name="verborgen-naam">
+            <input type="submit">
+        </form>
+
+        <form action="email">
+            <h3>Email</h3>
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email">
+            <input type="submit">
+        </form>
+
+        <H3>Voorbeeld</H3>
+        <form action="voorbeeld" method="post" style="width:400px">
+            <fieldset>
+                <legend>Persoons gegevens</legend><br>
+                <form action=" mailto:madhwibalkaran@gmail.com" method="get">
+                    <label for="Achternaam">Achternaam:</label>
+                    <input type="text" name="Achternaam"><br><br>
+                    <label for="Voornaam">Voornaam:</label>
+                    <input type="text" name="Voornaam"><br><br>
+
+                    <label for="birthday">Geboortedatum:</label>
+                    <input type="date" id="geboortedatum" name="geboortedatum"><br><br>
+
+                    <input type="radio" id="M:" name="m-v value=" M:">
+                    <label for="M:">M:</label>
+                    <input type="radio" id="V:" name="m-v value=" V:">
+                    <label for="V:">V:</label><br><br>
+
+                    <label for="postcode">Postcode:</label>
+                    <input type="postcode" id="postcode" name="postcode"><br><br>
+
+                    <label for="adres">Adres:</label>
+                    <input type="adres" id="adres" name="adres"><br><br>
+            </fieldset> 
+        
+            <input type="submit">
+            <input type="reset" value="Reset">
+        </form>
 
     </header>
 </body>
