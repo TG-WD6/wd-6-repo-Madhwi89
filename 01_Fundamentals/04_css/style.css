@@ -1,9 +1,33 @@
 /*Opdracht 1*/
-div h2{ color: green;}
-div p{ color: darkblue;}
-div{color: green;}
+/*Verschillende selectors*/
+div h2 {
+    color: green;
+}
 
-#class-selector { color: black;}
-#pt {color: green;}
-#pt1 {color: darkblue;}
+div p {
+    color: darkblue;
+}
 
+div {
+    color: green;
+}
+
+/*Verschillende selectors class en attribute*/
+#class-selector {
+    color: black;
+    background-color: hotpink;
+    width: 150px;
+}
+
+#pt {
+    color: green;
+}
+
+#pt1 {
+    color: darkblue;
+}
+
+/*Universal selector*/
+* {
+    background-color: pink;
+}
