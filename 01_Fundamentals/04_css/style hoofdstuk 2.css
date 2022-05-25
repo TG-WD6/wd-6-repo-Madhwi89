@@ -1,1 +1,10 @@
-#block { background-color: green;}
+.block { background-color: green;  border-style: solid; margin-right: 700px;}
+
+.inline { background-color: green;  border-style: solid; }
+
+.inline-tekst { background-color: white;}
+
+.voorbeeld {
+    background-color: lightgreen;
+}
+.border { background-color: pink; 
