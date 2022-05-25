@@ -1,5 +1,15 @@
 /*Opdracht 1*/
 /*Verschillende selectors*/
+
+
+#hoofdstuk-benaming {
+    background-color: lightcoral;
+    width: 365px;
+    text-align: center;
+    margin: auto;
+
+}
+
 div h2 {
     color: green;
 }
@@ -8,11 +18,11 @@ div p {
     color: darkblue;
 }
 
-div {
+#groen {
     color: green;
 }
 
-/*Verschillende selectors class en attribute*/
+/*Verschillende selectors class en attribute opdr6*/
 #class-selector {
     color: black;
     background-color: hotpink;
@@ -30,4 +40,44 @@ div {
 /*Universal selector*/
 * {
     background-color: pink;
+}
+
+/*Attribute selector*/
+a[target="_blank"] {
+    background-color: teal;
+    font-size: 150%;
+}
+
+
+a[href*="3"] {
+    background-color: rgb(125, 15, 105);
+    color: white;
+    font-size: 200%;
+    font-style: italic;
+    float: right;
+}
+
+/*Child selectors*/
+
+div>p {
+    background-color: yellow;
+    font-size: 50px;
+
+}
+
+/*Adjecent sibling selector*/
+div+p {
+    background-color: lightblue;
+    font-size: 30px;
+}
+
+#Adjecent {
+    color: black;
+    text-decoration: underline;
+}
+
+/*General sibling selector*/
+
+div~p {
+    background-color: red;
 }
