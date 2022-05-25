@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<link rel="stylesheet" href="style hoofdstuk 2.css">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS hoofdstuk 1</title>
+</head>
+
+<body>
+
+
+
+    <!--Opdracht 1-->
+
+    <h1 id="hoofdstuk-benaming">Selectors and Visual Rules</h1>
+
+    <h2>Opdracht 1</h2>
+
+    <p>3 manieren om CSS in te laden aan je HTML pagina</p>
+    <li>External</li>
+    <li>Internal</li>
+    <li>Inline</li>
+    <p>External: Een externe stylesheet koppelen aan een HTML pagina. Je gebruikt de tag < link> in HTML na je
+            titel,
+            binnen de head.</p>
+    <p>Internal: Een interne stylesheet maak je binnen je HTML pagina. Je gebruikt de tag < style> binne de head
+            sectie
+            van je HTML pagina.</p>
+    <p>Inline: Een inline style gebruik je als je een unieke stijl wilt toevoegen aan 1 element. Je gebruikt de tag
+        < style> dan binnen het element wat je wil veranderen binnen je HTML pagina
+    </p>
+
+
+    <!--Opdracht 2-->
+
+    <h2>Opdracht 2</h2>
+
+    <p>Een CSS syntax bestaat uit een selector, property en een value een voorbeeld: p {
+        color: red;
+        text-align: center;
+        } <br> de p verwijst naar het stukje met de p tag in HTML ( de selector ). { openingtag en de } is de
+        closingtag. Color is
+        je
+        property en de kleur in je value. Hetzelfde geldt voor text- align, dat is je property en je value is center
+    </p>
+
+
+    <!--Opdracht 3-->
+
+    <h2>Opdracht 3</h2>
+
+    <p>Type selectors:</p>
+    <li>* is de universele selector. Dit geldt voor de hele HTML pagina</li>
+    <li>Je hebt ook een specifieke selector zoals de p element of het div element. </li>
+    <li>De id selector staat voor het selecteren van een element met een specifieke id je gebruikt dan de # ervoor.
+    </li>
+    <li>Het class element gebruik je om het element met een specifieke class te selecteren. je gebruikt dan een .
+        gevolgd door de classname</li>
+    <li>Je kan ook een groep selecteren. Dan gebruik je een komma tussen de elementen</li>
+    <li>De descendant selector komt overeen met alle elementen binnen 1 element. Bijvoorbeeld div p. Hier gaat het
+        om het selecteren van alle p elementen binnen de div elementen</li><br>
+
+    <p>Voorbeelden selectors:</p>
+    <li> id selector: #firstname {
+        background-color: yellow;
+        } <br> Style het element met de id firstname</li>
+    <li> class selector: .intro {
+        background-color: yellow;
+        } de class is intro, . betekent alle class met intro selecteren</li>
+    <li>p.hometown {
+        background-color: yellow;
+        } alle p elementen met de class hometown stylen</li>
+    <li>
+        < p class=" center large ">This paragraph refers to two classes.< /p> het element is p en heeft twee
+                elementen, namelijk center en large
+    </li>
+    <li> id selector: #firstname {
+        background-color: yellow;
+        } </li>
+    <li> Descendant selector: Je hebt bijvoorbeeld een div tag ( met id main ) en daar binnenin verschillende p tag
+        en misschien ook een
+        div tag. Dan zijn de p en div descendants van de ( eerste ) div ( met id main ). Een voorbeeld: main p {
+        background-color: yellow;
+        }</li> <br>
+
+
+    <!--Opdracht 4-->
+
+    <h2> Opdracht 4 </h2>
+
+    <div>
+        <h2>Title</h2>
+        <div id="groen">
+            <section>
+                <p>paragraph tekst</p>
+            </section>
+            tekst zonder tag
+        </div>
+
+    </div>
+
+
+    <!--Opdracht 5-->
+
+    <h2>Opdracht 5</h2>
+    <div>
+        <h2 id="class-selector">Class selectors</h2>
+        <section>
+            <p id="pt">paragraph tekst</p>
+            <p id="pt1">paragraph tekst</p>
+        </section>
+    </div>
+
+    <!--Opdracht 6-->
+
+    <h2>Opdracht 6</h2>
+    <a href="https://www.youtube.com/watch?v=m_upHrxjR8s"
+        target="_blank">https://www.youtube.com/watch?v=m_upHrxjR8s</a> <br> <br>
+    <a
+        href="https://www.w3schools.com/css/css_attribute_selectors.asp">https://www.w3schools.com/css/css_attribute_selectors.asp</a>
+    <br><br>
+
+
+    <h3>4 verschillende selectors</h3>
+
+
+    <p>
+        <li>Descendant selector ( Space )</li>
+        <li>Child selector ( > )</li>
+        <li>Adjecent sibling selector ( + )</li>
+        <li>General sibling selector ( ~ )</li>
+    </p>
+
+
+
+    <!--Child selector-->
+    <div>
+        <p> Dit is het div > p style element</p>
+    </div>
+
+    <!--Adjecent sibling selector-->
+
+    <div>
+        <h2 id="Adjecent">
+            <section<p>Dit is een voorbeeld van een adjecent sibling selector</p>
+                </section>
+        </h2>
+    </div>
+    <p>Adjecent sibling selector</p>
+    <p>General sibling selector</p>
+    <p>Oefening</p> <code>oefening</code>
+    <p>Oefening</p><br>
+
+    <h2>Opdracht 7</h2>
+    Zie andere HTML file
+
+
+
+    <h2>Opdracht 8</h2>
+    
+
+</body>
+
+</html>
