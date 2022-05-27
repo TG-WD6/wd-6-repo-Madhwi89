@@ -1,7 +1,10 @@
+<<<<<<< HEAD
 * {
     box-sizing: border-box;
 }
 
+=======
+>>>>>>> d7795cf8aaef40ea87cf04535c5056ca04c1b1da
 .static {
     position: static;
     border-style: solid;
@@ -54,6 +57,7 @@
 
 .opdr2 {
     color: red;
+<<<<<<< HEAD
 
     left: 20px;
     bottom: 30px;
@@ -67,3 +71,9 @@ text-align: center;
 }
 
 .text { position: absolute;}
+=======
+    
+    left: 20px;
+    bottom: 30px;
+}
+>>>>>>> d7795cf8aaef40ea87cf04535c5056ca04c1b1da
