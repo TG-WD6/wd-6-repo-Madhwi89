@@ -1,8 +1,90 @@
-.img { width: 400px;}
-
-.text { position: absolute;
-top: 50px;
-left: 16px;
-font-size: 18px; color: black;
+.img {
+    width: 400px;
 }
 
+.text {
+    position: absolute;
+    top: 50px;
+    left: 16px;
+    font-size: 18px;
+    color: black;
+}
+
+.container1 {
+    height: 150px;
+    position: relative;
+    width: 700px;
+
+}
+
+.buiten {
+    height: 100px;
+    width: 100px;
+    background-color: orange;
+    position: absolute;
+}
+
+.binnen {
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    position: relative;
+    top: 25px;
+    left: 25px;
+
+}
+
+.zon {
+    position: relative;
+    width: 50px;
+}
+
+.beschrijving {
+    position: relative;
+    bottom: 500px;
+    left: 400px;
+
+}
+
+.griek {
+    color: white;
+}
+
+.onderschrift {
+    color: yellow;
+    font-size: large;
+    right: 800px;
+}
+
+.achtergrond { background-color: yellow;
+    background-position:  50px;
+    width: 400px;
+    height: 50px;
+margin-top: 50px;}
+
+.koud {
+    position: absolute;
+    
+
+}
+
+.beschrijving {
+    position: bottom: 100px;
+}
+
+
+
+.brr {
+    background-color: yellow;
+    position: relative;
+    top: 50px;
+    width: 300px;
+
+}
+
+.onderschrift2 {
+    position: relative;
+    top: 40px;
+    background-color: rgba(255, 255, 255, 0.5);
+    width: 200px;
+}
