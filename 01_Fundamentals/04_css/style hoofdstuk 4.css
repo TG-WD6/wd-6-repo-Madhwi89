@@ -1,0 +1,76 @@
+* box-sizing: border-box .body {
+    padding: 0;
+    margin: 0;
+}
+
+
+p::first-line {
+    color: red;
+    font-variant: small-caps;
+}
+
+p::first-letter {
+    color: green;
+    font-size: xx-large;
+}
+
+.button {
+    background-color: cadetblue;
+    border-left: red;
+    border-right: red;
+    color: white;
+    display: inline-block;
+    font-size: 100px;
+    padding: 30px;
+    border: 30px;
+}
+
+.opdr3 {
+    position: relative;
+    text-align: center;
+    color: red;
+}
+
+.opdr3tekst {
+    position: absolute;
+    bottom: 80px;
+    left: 320px;
+    right: 320px;
+
+
+}
+
+.banner {
+    background-image: url(../04_css/images/image45.jpg);
+    position: relative;
+
+    padding: 100px;
+    background-repeat: no-repeat;
+
+}
+
+.banner::before {
+    content: '';
+    position: absolute;
+    text-align: center;
+
+}
+
+.cirkel {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border-radius: 50%;
+position: relative;
+justify-content: right;
+}
+
+.inhoud {
+    position: absolute;
+    width: inherit;
+    height: auto;
+    text-align: center;
+    color: white;
+    top: 40%;
+    font-size: xx-large;
+}
