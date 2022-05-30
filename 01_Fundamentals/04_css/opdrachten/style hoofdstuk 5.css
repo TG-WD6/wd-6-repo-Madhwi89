@@ -1,0 +1,117 @@
+.flex-container {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: yellowgreen;
+}
+
+/*opdr 2*/
+.flex-container>div {
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.flex-container1 {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: flex-end;
+    background-color: yellowgreen;
+}
+
+.flex-container1>div {
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+
+/*opdr 3*/
+.flex-container>div {
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+}
+
+.flex-container2 {
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: yellowgreen;
+    align-items: stretch;
+}
+
+.flex-container2>div {
+    background-color: cadetblue;
+    margin: 10px;
+    padding: 30px;
+    text-align: center;
+    font-size: 30px;
+
+}
+
+/*opdr 3*/
+.two {
+    flex-grow: 2;
+}
+
+/*opdr 4*/
+
+.rood {
+    background-color: red;
+    min-height: 30px;
+}
+
+.blauw {
+    background-color: blue;
+    min-height: 50px;
+}
+
+.groen {
+    background-color: green;
+    min-height: 190px;
+}
+
+.main {
+    flex: 1;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    margin-right: 1300px;
+}
+
+
+/*opdr 5*/
+
+.container {
+    border: 1px solid black;
+    background-color: bisque;
+    width: 740px;
+    height: 380px;
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+
+
+
+}
+
+
+.rij {
+    border: 1px solid black;
+    background-color: purple;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+/*opdr 5 poging 2*/
+
+.poging2 {
+    background-color: plum;
+    
+}
