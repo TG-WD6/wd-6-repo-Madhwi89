@@ -86,32 +86,221 @@
 }
 
 
-/*opdr 5*/
+/*opdr 6*/
 
 .container {
-    border: 1px solid black;
+    1px solid black;
     background-color: bisque;
-    width: 740px;
-    height: 380px;
+    height: 530px;
+}
+
+.rijen {
+
     display: flex;
-    flex-direction: row;
-    text-align: center;
-
-
-
+    flex-direction: column;
+    justify-content: space-between;
+    height: 500px;
 }
 
 
-.rij {
+.rij1,
+.rij2 {
     border: 1px solid black;
     background-color: purple;
     margin-top: 20px;
     padding: 10px;
 }
 
-/*opdr 5 poging 2*/
+.rij3,
+.rij4 {
+    border: 1px solid black;
+    background-color: purple;
+    margin-top: 20px;
+    padding: 10px;
+}
 
-.poging2 {
-    background-color: plum;
+.rij5,
+.rij6 {
+    border: 1px solid black;
+    background-color: purple;
+    margin-top: 20px;
+    padding: 10px;
+}
+
+.rij2 {
+    width: 500px;
+}
+
+.rij3 {
+    width: 700px;
+}
+
+.rij4 {
+    width: 800px;
+}
+
+.rij5 {
+    width: 300px;
+}
+
+.rij6 {
+    width: 400px;
+}
+
+/*opdr 7*/
+
+
+.container1 {
+    1px solid black;
+    background-color: bisque;
+    height: 500px;
+}
+
+.rows {
+
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    height: 500px;
+}
+
+.row1,
+.row2 {
+    border: 1px solid black;
+    background-color: purple;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.row3,
+.row4 {
+    border: 1px solid black;
+    background-color: purple;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+
+.row5,
+.row6 {
+    border: 1px solid black;
+    background-color: purple;
+    margin-top: 0px;
+    padding: 5px;
+}
+
+.row2 {
+    align-items: flex-start;
+    margin-bottom: 50px;
+    margin-top: 100px;
+}
+
+.row3 {
+    align-items: flex-start;
+    margin-bottom: 30px;
+    margin-top: 80px;
+}
+
+.row4 {
+    align-items: flex-start;
+    margin-bottom: 20px;
+    margin-top: 60px;
+}
+
+.row5 {
+    align-items: flex-start;
+    margin-bottom: 100px;
+    margin-top: 200px;
+}
+
+.row6 {
+    align-items: flex-start;
+    margin-bottom: 90px;
+    margin-top: 150px;
+}
+
+/*opdr 8*/
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 300px;
+}
+
+.column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: xx-large;
     
+    
+    
+}
+
+.wheat {
+    background-color: wheat;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+    
+}
+
+.lightblue {
+    background-color: lightblue;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+
+}
+
+.green {
+    background-color: lightgreen;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.white {
+    background-color: white;
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+}
+
+.black {
+    background-color: black;
+    height: 100px;
+    border: 1px solid black;
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
+    
+}
+
+.bluewhite {
+    background-image: linear-gradient(to right, blue, rgb(246, 246, 248));
+    height: 100px;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 10px;
 }
