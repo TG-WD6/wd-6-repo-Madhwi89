@@ -96,3 +96,41 @@ section div {
     grid-template-columns: minmax(100px 200px);
 grid-gap: 10px;
 }
+
+/*--opdracht 8--*/
+
+
+
+section {
+    min-height: 100vh;
+    min-width: 100vw;
+    background-color: lightblue;
+    padding: 25px;
+}
+
+section div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: thin solid black;
+}
+
+.sidebar2 {
+    background-color: lightgreen;
+    grid-row: 1 / 4;
+
+
+}
+
+.article2 {
+    background-color: white;
+    grid-column: 2;
+    height: 200px;
+    width: 600px;
+}
+
+.grid-container2 {
+    display: grid;
+    grid-template-columns: [col-start] 300px [col-mid] 1fr [col-end];
+    grid-template-rows: [row-start] 1fr [row-mid] 1fr [row-end];
+}
