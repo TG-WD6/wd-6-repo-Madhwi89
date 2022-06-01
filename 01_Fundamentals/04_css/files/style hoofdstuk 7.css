@@ -1,0 +1,71 @@
+/*opdracht 2*/
+
+a {
+    color: green;
+    background-color: black;
+    transition: color 1s;
+    /* For modern browsers */
+
+}
+
+a:hover {
+    color: #ff0000;
+    background-color: blueviolet;
+}
+
+h2 {
+    color: chartreuse;
+}
+
+h2:hover {
+    color: blueviolet;
+}
+
+
+.container {
+    height: 300px;
+    width: 500px;
+    border: 1px solid black;
+    background-color: lightgray;
+}
+
+.one {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+
+
+.two {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-area: 3 / 3 / 4 / 4;
+
+}
+
+.three {
+    height: 50px;
+    width: 50px;
+    border: 1px solid black;
+    display: grid;
+    justify-content: center;
+    align-content: center;
+    grid-area: 3 / 3 / 4 / 4;
+}
+
+.box {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    grid-column-gap: 0px;
+    grid-row-gap: 0px;
+}

@@ -15,7 +15,7 @@ section {
     min-width: 100vw;
     background-color: lightblue;
     padding: 25px;
-    
+
 }
 
 section div {
@@ -23,7 +23,7 @@ section div {
     justify-content: center;
     align-items: center;
     border: thin solid black;
-    
+
 }
 
 .sidebar {
@@ -44,15 +44,24 @@ section div {
 .container-grid {
     display: grid;
     grid-template-columns: [col-start] 300px [col-mid] 1fr [col-end];
-    grid-template-rows: [row-start] 1fr [row-mid] 1fr [row-end];
+    grid-auto-rows: [row-start] 1fr [row-mid] 1fr [row-end];
 }
 
-#article_1{ grid-column-start: col-mid;
+#article_1 {
+    grid-column-start: col-mid;
     grid-column-end: col-end;
-    grid-row-start: row-start; 
-grid-row-end: row-mid;}
+    grid-row-start: row-start;
+    grid-row-end: row-mid;
+}
 
-#article_2{ grid-column-start: col-mid;
+#article_2 {
+    grid-column-start: col-mid;
     grid-column-end: col-end;
-    grid-row-start: row-mid; 
-grid-row-end: row-end;}
+    grid-row-start: row-mid;
+    grid-row-end: row-end;
+}
+
+#article_3 {
+    background-color: blue;
+    grid-row-start: 5;
+}
