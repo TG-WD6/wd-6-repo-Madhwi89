@@ -1,0 +1,12 @@
+@import "./colors";
+
+
+button {
+    background-color: $button-color;
+    padding: 15px 32px;
+    color: white;
+    font-size: 16px;
+    &:hover{ background-color: $button-hover-color;}
+
+    
+}

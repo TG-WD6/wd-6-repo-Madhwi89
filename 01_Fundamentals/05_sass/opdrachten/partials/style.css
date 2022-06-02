@@ -1,0 +1,11 @@
+button {
+  background-color: lightblue;
+  padding: 15px 32px;
+  color: white;
+  font-size: 16px;
+}
+
+button:hover {
+  background-color: violet;
+}
+/*# sourceMappingURL=style.css.map */
