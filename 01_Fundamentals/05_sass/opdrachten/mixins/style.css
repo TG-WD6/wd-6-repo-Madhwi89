@@ -1,1 +1,63 @@
-/* No CSS *//*# sourceMappingURL=style.css.map */
+button {
+  background-color: #ad3dad;
+  color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 20px;
+  margin-left: 50px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+button:hover {
+  background-color: #5050c1;
+  color: black;
+}
+
+body {
+  background-color: #a0246e;
+}
+
+@media screen and (max-width: 320px) {
+  body {
+    background-color: red;
+  }
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.button {
+  margin-top: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.colorChangingSquare {
+  width: 150px;
+  height: 150px;
+  background: blue;
+  margin-top: 20px;
+  margin-left: auto;
+  margin-right: auto;
+  -webkit-transition: background-color 2s ease-out;
+  transition: background-color 2s ease-out;
+}
+
+.colorChangingSquare:hover {
+  background-color: orangered;
+}
+
+.cont { height: 100px;
+  width: 300px;
+  border: 1px solid black;}
+/*# sourceMappingURL=style.css.map */

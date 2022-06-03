@@ -1,3 +1,21 @@
+@import "./colors";
+
+
 @mixin button {
-    
+    background-color: $primary-color;
+    color: $button-text;
+    border-radius: 10px;
+    padding: 20px;
+    margin-top: 20px;
+    margin-left: 50px;
+
+    &:hover {
+        background-color: $button-hover-color;
+        color: $button-text-hover
+    }
+}
+
+button {
+    @include button;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }

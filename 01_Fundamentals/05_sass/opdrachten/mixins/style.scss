@@ -1,1 +1,48 @@
-@import "./button"
+@import "./button";
+@import "./colors";
+
+$break-small: 320px;
+
+
+body { background-color: rgb(160, 36, 110);
+
+    @media screen and (max-width: $break-small) { background-color: red;
+        
+      }
+
+    }
+
+    
+
+.container { display: flex; justify-content: center;}
+
+.button {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+
+
+.colorChangingSquare {
+    width: 150px;
+    height: 150px;
+    background: blue;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    transition: background-color 2s ease-out;
+  }
+  
+  .colorChangingSquare:hover {
+    background-color: orangered;
+  }
+
+  
+
+  $information-phone: "only screen and (max-width : 320px)";
+
+
+
+
+  
+  
