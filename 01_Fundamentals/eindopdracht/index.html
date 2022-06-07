@@ -12,7 +12,7 @@
 <body>
     <div class="root">
         <nav class="navbar">
-            <!--IK BEN HIER-->
+            <img class="navbar_logo" src="./images/TG-logo-300x60.png" alt="TechGrounds logo">
             <input type="checkbox">
             <div class="navbar_toggle">
                 <span></span>
@@ -25,13 +25,27 @@
                 <li><a class="navbar_link" href="#">Contact</a></li>
             </ul>
         </nav>
-        <header class="header">
+        <header class="login">
+            <form action="Login" method="post" style="width:400px">
+                <img class="login_icon" src="./images/loginicon.png" alt="login icon">
+                <legend>Login</legend><br>
+                <p>Login with Your Email</p>
+                <action=" mailto:madhwibalkaran@gmail.com" method="get">
+                    <label for="email">Email</label>
+                    <input type="text" name="Email"><br><br>
+                    <label for="password">Password</label>
+                    <input type="text" name="Password"><br><br>
+                    <form action="checkbox">
+                        <input type="checkbox" id="remember me" name="remember_me" value="remember">
+                        <label for="remember_me"> Remember me</label><br>
+
+                    </form>
 
         </header>
-        <aside class="sidebar">
+        <aside class="product_cards">
 
         </aside>
-        <main class="content">
+        <main class="footer">
 
         </main>
     </div>
