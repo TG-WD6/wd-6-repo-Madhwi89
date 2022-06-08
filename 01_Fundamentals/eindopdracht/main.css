@@ -7,14 +7,9 @@ body {
   margin: 0;
 }
 
-.root {
-  display: -ms-grid;
-  display: grid;
-  min-height: 100vh;
-  -ms-grid-columns: 150px 1fr;
-      grid-template-columns: 150px 1fr;
-  -ms-grid-rows: 65px 1fr;
-      grid-template-rows: 65px 1fr;
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 .navbar {
@@ -34,6 +29,7 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  width: 100%;
 }
 
 .navbar input {
@@ -48,6 +44,12 @@ body {
 
 .navbar input:checked ~ div span {
   background-color: black;
+  -webkit-transform: rotate(45deg);
+          transform: rotate(45deg);
+  -webkit-transition: -webkit-transform 250ms ease;
+  transition: -webkit-transform 250ms ease;
+  transition: transform 250ms ease;
+  transition: transform 250ms ease, -webkit-transform 250ms ease;
 }
 
 .navbar input:checked ~ ul {
@@ -65,7 +67,7 @@ body {
   background-color: darkblue;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .navbar input {
     display: none;
   }
@@ -95,7 +97,7 @@ body {
   width: 35px;
 }
 
-@media (min-width: 500px) {
+@media (min-width: 700px) {
   .navbar_toggle {
     display: none;
   }
@@ -106,6 +108,7 @@ body {
   padding: 0;
   list-style-type: none;
   display: none;
+  font-size: 18px;
 }
 
 .navbar_list li {
@@ -125,13 +128,127 @@ body {
   }
 }
 
+*, *::after, *::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
 .login {
-  border: 10px solid black;
+  border: 1px solid black;
+  margin: 300px;
+  margin-left: 550px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: linear-gradient(120deg, #2980b9, #8e44ad);
+  text-align: center;
+  width: 300px;
+}
+
+.login p {
+  color: lightgrey;
+}
+
+.login a {
+  margin-left: 30px;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+input {
+  border: none;
 }
 
 .login_icon {
   width: 100px;
   height: auto;
+  margin-top: 20px;
+}
+
+.login_button {
+  width: 200px;
+  background-color: #b650b6;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  font-size: 2em;
+}
+
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.test_container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   margin: 20px;
+}
+
+.test_tekst {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;
+}
+
+.prijs {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-item-align: center;
+      align-self: center;
+  margin-right: -6px;
+  font-family: produkt, arial, helvetica, sans-serif;
+  font-size: 1.625rem;
+  font-weight: 700;
+  line-height: initial;
+  color: #ff4947;
+}
+
+.prijs__fraction {
+  position: relative;
+  top: -4px;
+  left: 0px;
+  font-size: 0.9375rem;
+  line-height: inherit;
+}
+
+h1 {
+  color: red;
+}
+
+h3 {
+  color: green;
+  font-family: graphik,arial,helvetica,sans-serif;
+  font-size: 12px;
 }
 /*# sourceMappingURL=main.css.map */

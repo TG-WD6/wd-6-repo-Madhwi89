@@ -1,3 +1,6 @@
+*, *::after, *::before {
+    box-sizing: border-box;
+}
 .navbar {
     padding: 5px 10px;
     background-color: $primary;
@@ -6,6 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    width: 100%;
 
     input {
         position: absolute;
@@ -18,7 +22,8 @@
 
         &:checked {
             &~div span {
-                background-color: black;
+                background-color: black; transform: rotate(45deg);
+		transition: transform 250ms ease;
 
             }
 
@@ -36,7 +41,7 @@
 
         }
 
-        @media (min-width: 500px) {
+        @media (min-width: 700px) {
             display: none;
 
         }
@@ -59,7 +64,7 @@
             width: 35px;
         }
 
-        @media (min-width: 500px) {
+        @media (min-width: 700px) {
             display: none;
 
         }
@@ -70,6 +75,7 @@
         padding: 0;
         list-style-type: none;
         display: none;
+        font-size: 18px;
 
 
         li {
@@ -79,7 +85,10 @@
                 text-decoration: none;
                 color: white;
             }
+             
         }
+
+      
 
 
 

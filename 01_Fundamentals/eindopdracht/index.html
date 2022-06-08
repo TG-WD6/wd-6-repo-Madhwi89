@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eindopdracht</title>
     <link rel="stylesheet" href="main.css">
+
 </head>
 
 <body>
@@ -20,34 +21,108 @@
                 <span></span>
             </div>
             <ul class="navbar_list">
-                <li><a class="navbar_link" href="#">Home</a></li>
-                <li><a class="navbar_link" href="#">Popular</a></li>
-                <li><a class="navbar_link" href="#">Contact</a></li>
+
+
+                <li><img src="./images/home-outline.png"><a class="navbar_link" href="#">Home</a></li>
+                <li><img src="./images/cards-heart-outline.png"><a class="navbar_link" href="#">Popular</a></li>
+                <li><img src="./images/account-box-outline.png"><a class="navbar_link" href="#">Contact</a></li>
             </ul>
         </nav>
+
+
         <header class="login">
             <form action="Login" method="post" style="width:400px">
-                <img class="login_icon" src="./images/loginicon.png" alt="login icon">
-                <legend>Login</legend><br>
-                <p>Login with Your Email</p>
+                <div class="container">
+                    <img class="login_icon" src="./images/loginicon.png" alt="login icon">
+                </div>
+                <h2 class="login_1">Login</h2>
+                <p class="login_1">Login with Your Email</p>
                 <action=" mailto:madhwibalkaran@gmail.com" method="get">
-                    <label for="email">Email</label>
-                    <input type="text" name="Email"><br><br>
-                    <label for="password">Password</label>
-                    <input type="text" name="Password"><br><br>
+
+                    <div class="label_1">
+                        <label for="email">Email</label>
+                        <input type="text" name="Email"><br><br>
+                        <label for="password">Password</label>
+                        <input type="password" name="Password"><br><br>
+                    </div>
+
                     <form action="checkbox">
                         <input type="checkbox" id="remember me" name="remember_me" value="remember">
-                        <label for="remember_me"> Remember me</label><br>
-
-                    </form>
-
+                        <label for="remember_me"> Remember me</label> <a href="Forget password?">Forget Password?</a>
+                        <br> <br>
+                        <button class="login_button">Login</button>
+                    </form><br><br><br>
         </header>
-        <aside class="product_cards">
 
-        </aside>
-        <main class="footer">
 
-        </main>
+
+        <div class="test_container">
+            <img src="./images/boek 1.jpg" alt="">
+            <div class="test_tekst">
+            <h5>Kelly Weekers</h5>
+            <h4>De kracht van keuze</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Error ipsam iusto vero modi! Ipsa autem
+                expedita esse tenetur cumque doloribus ullam fugit, <br> asperiores amet ex odio aut quisquam quo! Quidem.
+            </p>
+        </div>
+        <img src="./images/boek .jpg" alt="">
+            <div class="test_tekst">
+            <h1>99,99</h1>
+            <h3>Voor 23.59 besteld, morgen in huis</h3>
+            <p>Plaatje winkelwagen.
+            </p>
+        </div>
+         </div>
+
+         <div class="test_container">
+            <img src="./images/boek 2.jpg" alt="">
+            <div class="test_tekst">
+            <h5>Delia Owens</h5>
+            <h4>De kracht van keuze</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Error ipsam iusto vero modi! Ipsa autem
+                expedita esse tenetur cumque doloribus ullam fugit, <br> asperiores amet ex odio aut quisquam quo! Quidem.
+            </p>
+        </div>
+        <img src="./images/boek .jpg" alt="">
+            <div class="test_tekst">
+            <h1>99,99</h1>
+            <h3>Voor 23.59 besteld, morgen in huis</h3>
+            <p>Plaatje winkelwagen.
+            </p>
+        </div>
+         </div>
+
+         <div class="test_container">
+            <img src="./images/boek 3.jpg" alt="">
+            <div class="test_tekst">
+            <h5>Alice Oseman</h5>
+            <h4>Heartstopper</h4>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. <br> Error ipsam iusto vero modi! Ipsa autem
+                expedita esse tenetur cumque doloribus ullam fugit, <br>  asperiores amet ex odio aut quisquam quo! Quidem.
+            </p>
+        </div>
+        <img src="./images/boek .jpg" alt="">
+        <div class="test_tekst">
+            <h1>99,99</h1>
+            <h3>Voor 23.59 besteld, morgen in huis</h3>
+            <p>Plaatje winkelwagen.
+            </p>
+
+    
+        </div>
+         </div>
+
+
+
+
+
+
+
+    </div>
+
+    <main class="footer">
+
+    </main>
     </div>
 
 
