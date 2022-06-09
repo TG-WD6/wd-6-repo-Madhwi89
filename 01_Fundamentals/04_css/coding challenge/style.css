@@ -1,0 +1,99 @@
+.container {
+    width: 50vw;
+    height: 500px;
+    display: flex;
+
+}
+
+.bol {
+    height: 100px;
+    width: 100px;
+    background-color: blue;
+    border-radius: 50%;
+}
+
+@keyframes loading_animation {
+    from {
+        transform: scale(10%);
+    }
+
+    50% {
+        transform: scale(100%);
+
+    }
+
+    to {
+        transform: scale(10%);
+
+    }
+}
+
+.container2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.bol_1 {
+    animation-name: loading_animation;
+    animation-duration: 0.7s;
+    animation-iteration-count: infinite;
+
+
+}
+
+.bol_2 {
+    animation-name: loading_animation;
+    animation-duration: 0.7s;
+    animation-delay: 0.2s;
+    animation-iteration-count: infinite;
+
+}
+
+.bol_3 {
+    animation-name: loading_animation;
+    animation-duration: 0.7s;
+    animation-delay: 0.3s;
+    animation-iteration-count: infinite;
+
+}
+
+
+.spinbol {
+    height: 20px;
+    width: 20px;
+    background-color: black;
+    border-radius: 50%;
+    
+    
+}
+
+
+
+.spinner:hover{
+    transition-duration: 1s;
+    background-color: gray;
+}
+
+.spinbolpair1,
+.spinbolpair2,
+.spinbolpair3,
+.spinbolpair4 {
+    display: flex;
+    flex-direction: column;
+    height: 100px;
+    justify-content: space-between;
+position: absolute;    
+}
+
+.spinbolpair2{transform: rotateZ(45deg);
+
+}
+
+.spinbolpair3 {
+    transform: rotateZ(90deg);
+}
+
+.spinbolpair4 {
+    transform: rotateZ(135deg);
+}

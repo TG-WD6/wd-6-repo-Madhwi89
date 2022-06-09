@@ -1,106 +1,93 @@
-*, *::after, *::before {
-    box-sizing: border-box;
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
 }
 .navbar {
-    padding: 5px 10px;
-    background-color: $primary;
-    grid-row: 1 / 1;
-    grid-column: 1 / span 2;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 100%;
+  padding: 5px 10px;
+  background-color: $primary;
+  grid-row: 1 / 1;
+  grid-column: 1 / span 2;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  
+  img {
+    cursor: pointer;
+  }
 
-    input {
+  input {
+    position: absolute;
+    height: 35px;
+    width: 35px;
+    right: 10px;
+    margin: 0%;
+    z-index: 2;
+    opacity: 0;
+
+    &:checked {
+      & ~ div span {
+        background-color: black;
+        transform: rotate(45deg);
+        transition: transform 250ms ease;
+      }
+
+      & ~ ul {
         position: absolute;
-        height: 35px;
-        width: 35px;
-        right: 10px;
-        margin: 0%;
-        z-index: 2;
-        opacity: 0;
-
-        &:checked {
-            &~div span {
-                background-color: black; transform: rotate(45deg);
-		transition: transform 250ms ease;
-
-            }
-
-            &~ul {
-                position: absolute;
-                top: 60px;
-                left: 0;
-                width: 100%;
-                display: flex;
-                flex-direction: column;
-                background-color: $primary;
-            }
-
-
-
-        }
-
-        @media (min-width: 700px) {
-            display: none;
-
-        }
-
-    }
-
-    &_logo {
-        max-height: 100%;
-    }
-
-    &_toggle {
-        height: 35px;
+        top: 60px;
+        left: 0;
+        width: 100%;
         display: flex;
         flex-direction: column;
-        justify-content: space-evenly;
-
-        span {
-            background-color: white;
-            height: 5px;
-            width: 35px;
-        }
-
-        @media (min-width: 700px) {
-            display: none;
-
-        }
+        background-color: $primary;
+      }
     }
 
-    &_list {
-        margin: 0;
-        padding: 0;
-        list-style-type: none;
-        display: none;
-        font-size: 18px;
-
-
-        li {
-            padding: 10px 15px;
-
-            a {
-                text-decoration: none;
-                color: white;
-            }
-             
-        }
-
-      
-
-
-
-        @media (min-width: 700px) {
-            display: flex;
-
-        }
-
-
-
-
-
-
+    @media (min-width: 700px) {
+      display: none;
     }
+  }
+
+  &_logo {
+    max-height: 100%;
+  }
+
+  &_toggle {
+    height: 35px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    span {
+      background-color: white;
+      height: 5px;
+      width: 35px;
+    }
+
+    @media (min-width: 700px) {
+      display: none;
+    }
+  }
+
+  &_list {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: none;
+    font-size: 18px;
+
+    li {
+      padding: 10px 15px;
+
+      a {
+        text-decoration: none;
+        color: white;
+      }
+    }
+
+    @media (min-width: 700px) {
+      display: flex;
+    }
+  }
 }
