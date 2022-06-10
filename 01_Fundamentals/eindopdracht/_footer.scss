@@ -1,10 +1,7 @@
-//.container_footer { background-color: antiquewhite }
-
 .footer {
     max-width: 1170px;
     background-color: antiquewhite;
     margin: auto;
-
 
     ul {
         list-style: none;
@@ -14,7 +11,7 @@
 
     .container_footer {
         padding: 70px 0;
-        font-family: arial, helvetica, sans-serif;;
+        font-family: arial, helvetica, sans-serif;
     }
 
     .row {
@@ -27,7 +24,6 @@
     .footer-col {
         width: 25%;
         padding: 0 15px;
-
     }
 
     h4 {
@@ -39,6 +35,11 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
-        align-items: flex-end;        
+        align-items: flex-end;
+    }
+
+    @media (min-width: 700px) {
+        display: flex;
+        flex-wrap: wrap;
     }
 }
