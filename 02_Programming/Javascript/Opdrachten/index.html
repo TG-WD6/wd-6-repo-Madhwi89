@@ -87,17 +87,114 @@
         console.log(a -= b) <br />
         - let a = '10'; <br />
         let b = '9'; <br />
-        console.log(a *= b) <br>
-        - let a = '10'; <br>
-        let b = '9'; <br>
-        console.log(a /= b) <br>
-        - let a = '10'; <br>
-        let b = '9'; <br>
-        console.log(a %= b) <br>
-        - let a = '10'; <br>
-        let b = '9'; <br>
-        console.log(a **= b) <br>
+        console.log(a *= b) <br />
+        - let a = '10'; <br />
+        let b = '9'; <br />
+        console.log(a /= b) <br />
+        - let a = '10'; <br />
+        let b = '9'; <br />
+        console.log(a %= b) <br />
+        - let a = '10'; <br />
+        let b = '9'; <br />
+        console.log(a **= b) <br />
       </li>
+    </ul>
+
+    <h1>2.1</h1>
+
+    <ul>
+      <li>
+        1: let someKittens = "De poes van de buurman heeft kittens gehad! Hij
+        vraagt of wij nog kittens willen." <br />
+        let someKittensSplit = someKittens.slice(0, 44); <br />
+        let someKittensHome = someKittens.slice(44, 82) <br />
+        console.log(someKittensSplit) <br />
+        console.log(someKittensHome) <br />
+      </li>
+      <li>2: console.log(someKittensSplit.toUpperCase()) <br /></li>
+      <li>
+        3: console.log(someKittens.indexOf("kittens")) <br />
+        console.log(someKittens.lastIndexOf("kittens")) <br />
+      </li>
+      <li>
+        4: console.log(someKittens.charAt(29)) De k krijg je terug. <br />
+        console.log(someKittens.charAt(66)) De k krijg je terug <br />
+      </li>
+    </ul>
+
+    <h1>2.2</h1>
+
+    <ul>
+      <li>
+        1: De substring verkort de zin als het eerste getal hoger is dan de
+        tweede. <br />
+      </li>
+      <li>
+        2: Slice laat niks zien in de console als het eerste getal hoger is dan
+        de tweede. <br />
+      </li>
+      <li>
+        3: Substring laat bij negatieve waardes niets in de console zien. <br />
+      </li>
+      <li>4: Slice doet bij negatieve waardes de zin wel opsplitsen. <br /></li>
+    </ul>
+
+    <h1>2.3</h1>
+
+    <ul>
+      <li>
+        let someKittens = "Die nieuwe kittens zijn zo schattig!" <br />
+        let someKittensWords = someKittens.split(" "); <br />
+        console.log(someKittensWords) <br />
+        (6) ['Die', 'nieuwe', 'kittens', 'zijn', 'zo', 'schattig!'] <br />
+        0: "Die" <br />
+        1: "nieuwe" <br />
+        2: "kittens" <br />
+        3: "zijn" <br />
+        4: "zo" <br />
+        5: "schattig!" <br />
+        length: 6 <br />
+        [[Prototype]]: Array(0) <br />
+      </li>
+    </ul>
+
+    <h1>3.1</h1>
+    <ul>
+      <li>
+        1: == is alleen gelijke waarde === is gelijke waarde EN gelijke datatype
+      </li>
+      <li>2: > is groter dan >=? is groter dan of gelijk aan</li>
+      <li>< is kleiner dan en <=? is kleiner dan of gelijk aan</li>
+      <li>
+        3: let x = 4; <br />
+        let y = 8; <br />
+        if (y && x) { <br />
+        console.log("Result!"); }
+      </li>
+      <li>
+        4: let x = 4; <br />
+        let y = 8; <br />
+        if (x || y) { <br />
+        console.log("Result!"); <br />
+        }
+      </li>
+
+      <li>
+        5: (let x = 4; let y = 8; if (x || y) { console.log("Result!"); } else {
+        console.log ("Result!") }) <br />
+      </li>
+      <li>6: <br /></li>
+
+      <li>7: let x = 8; 
+        if ('>5' && '<10')
+        console.log(x);</li>
+        <li>8: let x = 15; 
+            if ('>11' && '<20')
+            console.log(x);</li>
+            <li>9: let x = 21; 
+                if (21 || 23)
+                console.log(x);</li>
+                <li>10: </li>
     </ul>
 
     <script src="./script.js"></script>

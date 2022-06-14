@@ -1,5 +1,7 @@
-let someKittens = "De poes van de buurman heeft kittens gehad! Hij vraagt of wij nog kittens willen."
-let sentence = someKittens.split (" ");
-console.log(sentence);
+let x = 30;
+let y = 44; 
+if (30 || 44)
+console.log(x);
+
 
 
