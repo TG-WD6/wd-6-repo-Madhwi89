@@ -168,33 +168,123 @@
       <li>
         3: let x = 4; <br />
         let y = 8; <br />
-        if (y && x) { <br />
+        if (x==4 && y==8) { <br />
         console.log("Result!"); }
       </li>
       <li>
         4: let x = 4; <br />
         let y = 8; <br />
-        if (x || y) { <br />
+        if (x==4 || y==8) { <br />
         console.log("Result!"); <br />
         }
       </li>
 
       <li>
-        5: (let x = 4; let y = 8; if (x || y) { console.log("Result!"); } else {
-        console.log ("Result!") }) <br />
+        5: let x = 4; <br />
+        let y = 8; <br />
+        if (x==4 || y==8) { <br />
+        console.log("Result!"); <br />
+        } else (!(x==4 || y==8)) <br />
+        console.log("Result!") <br />
       </li>
-      <li>6: <br /></li>
+      <li>
+        6: let x = 4; <br />
+        let y = 8; <br />
+        if (x==4) { <br />
+        console.log("Result!"); <br />
+        } else (y==8); { <br />
+        console.log("Result!") } <br />
+      </li>
 
-      <li>7: let x = 8; 
-        if ('>5' && '<10')
-        console.log(x);</li>
-        <li>8: let x = 15; 
-            if ('>11' && '<20')
-            console.log(x);</li>
-            <li>9: let x = 21; 
-                if (21 || 23)
-                console.log(x);</li>
-                <li>10: </li>
+      <li>7: let x = 8; if ('>5' && '<10') console.log(x);</li>
+      <li>8: let x = 15; if ('>11' && '<20') console.log(x);</li>
+      <li>9: let x = 21; if (21 || 23) console.log(x);</li>
+      <li>10:</li>
+    </ul>
+
+    <h1>3.2</h1>
+    <ul>
+      <li>vraag 2: 4 laat hij niet zien. <br /></li>
+      <li>
+        Vraag 3: <br />
+        let maand = 1; <br />
+        if ( maand == 1) { <br />
+        console.log("Januari") <br />
+        } else if ( maand == 2 && maand < 3) { <br />
+        console.log("Februari") <br />
+        } else if ( maand == 3 && maand < 4) { <br />
+        console.log("Maart") <br />
+        } else if ( maand > 3 && maand < 5) { <br />
+        console.log("April") <br />
+        } else if ( maand > 4 && maand < 6) { <br />
+        console.log("Mei") <br />
+        } else if ( maand > 5 && maand < 7) { <br />
+        console.log("Juni") <br />
+        } else if ( maand > 6 && maand < 8) { <br />
+        console.log("Juli") <br />
+        } else if ( maand > 7 && maand < 9) { <br />
+        console.log("Augustus") <br />
+        } else if ( maand > 8 && maand < 10) { <br />
+        console.log("September") <br />
+        } else if ( maand > 9 && maand < 11) { <br />
+        console.log("Oktober") <br />
+        } else if ( maand > 10 && maand < 12) { <br />
+        console.log("November") <br />
+        } else if ( maand > 11 && maand < 13) { <br />
+        console.log("December") <br />
+        } else if ( maand > 12 ) { <br />
+        console.log("Geen geldige maand!") }
+      </li>
+
+      <li>
+        Vraag 4: let maand = "15"; <br />
+        switch (maand) { <br />
+        case '1': <br />
+        console.log("Januari"); <br />
+        break; <br />
+        case '2': <br />
+        console.log("Februari"); <br />
+        break; <br />
+        case '3': <br />
+        console.log("Maart"); <br />
+        break; <br />
+        case '4': <br />
+        console.log("April"); <br />
+        break; <br />
+        case '5': <br />
+        console.log("Mei"); <br />
+        break; <br />
+        case '6': <br />
+        console.log("Juni"); <br />
+        break; <br />
+        case '7': <br />
+        console.log("Juli"); <br />
+        break; <br />
+        case '8': <br />
+        console.log("Augustus"); <br />
+        break; <br />
+        case '9': <br />
+        console.log("September"); <br />
+        break; <br />
+        case '10': <br />
+        console.log("Oktober"); <br />
+        break; <br />
+        case '11': <br />
+        console.log("November"); <br />
+        break; <br />
+        case '12': <br />
+        console.log("December"); <br />
+        break; <br />
+        default: <br />
+        console.log("Geen geldige maand!") <br />
+        }
+      </li>
+      <li>
+        Vraag 5: let x = 3; <br />
+        let results <br />
+        results = x<=4 ? '2' : '5' <br />
+        console.log(results) <br />
+      </li>
     </ul>
 
     <script src="./script.js"></script>
