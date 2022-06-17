@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./main.js" defer></script>
     <title>Hoofdstuk 4 functions</title>
 </head>
 <body>
@@ -15,7 +16,7 @@
 </div> <br>
 
  <div>
-    Vraag 2: <input id="firstInputElement" type="text" onchange= "getText(value)">
+    Vraag 2: <input id="firstInputElement" type="text" oninput= "getText(value)">
 </div>
 
 <!-- classname -->
@@ -39,16 +40,40 @@
 <p>The number of li elements in this document is:</p>
 <p id="demo"></p>   
 
-<!-- queryselector  -->
+<!-- queryselector and queryselectorAll  -->
 
 <h4>A h4 element</h4>
 <h3>A h3 element</h3>
 
+<div id="container">
+<div class="div1">
+    <p>Dit is een p tag om een voorbeeld te maken van een queryselectorAll.</p>
+    <p>Dit is de tweede p tag om een voorbeeld te maken van queryselectorAll.</p>
+</div>
+</div>
+
+<!-- element.innerHTML  -->
 
 
 
+<p id="oefening1">Klik & delete!</p>
+<button onclick="myFunction()">Klik dan!</button>
 
 
-    <script src="./main.js"></script>
+<!-- 4.2 -->
+<h1>4.2</h1>
+<p>Vraag 2: Oninput verandert meteen en onchange niet.</p>
+
+<!-- Vraag 4.3 -->
+
+<button onclick="randomNumber()">Klik klik klik!</button>
+
+<!-- Vraag 4.4 -->
+<br> <br>
+<div>
+    <input style="border-radius: 5px;" type="text" oninput="namenGroep(value)" id="groep">
+</div>
+
+
 </body>
 </html>
