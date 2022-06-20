@@ -14,13 +14,12 @@ function pressButton() {
 var y = document.getElementById("firstInputElement");
 function getText(test) {
   var x = console.log(test);
-  return (x *2);
-      
+  return x * 2;
 }
 
 // var z = "Result"
 // function getNumber(number) {
-    
+
 // }
 
 //vraag 4
@@ -38,20 +37,20 @@ document.getElementById("demo").innerHTML = collection.length;
 document.querySelector("h3, h4").style.backgroundColor = "red";
 
 //queryselectorAll
-// function myfunction() { 
+// function myfunction() {
 // let container = document.querySelector("#container");
 // let matches = document.querySelectorAll("div.div1 > p");
-// let change; 
+// let change;
 // for ()
 // }
 
 // const container = document.getElementById("container")
 // container.style.backgroundColor = "red"
 
-const container = document.querySelector("#container")
-changeColor(container)
+const container = document.querySelector("#container");
+changeColor(container);
 function changeColor(element) {
-    element.style.backgroundColor = "aquamarine"
+  element.style.backgroundColor = "aquamarine";
 }
 
 // const div1 = document.querySelectorAll("#container.div1 > p")
@@ -61,23 +60,20 @@ function changeColor(element) {
 // }
 
 function myFunction() {
-    document.getElementById("oefening1").innerHTML = "";
-
+  document.getElementById("oefening1").innerHTML = "";
 }
-
 
 // var y = document.getElementById("firstInputElement");
 // function getText(test) {
 //   var x = console.log(test.value);
 //  return (x *2);
-      
+
 // }
 
-
-// function randomNumber() {
-//     let x = 1;
-// console.log(Math.round(0 >= x < 1))
-// }
+function randomNumber() {
+    let x = 1;
+console.log(Math.round(0 >= x < 1))
+}
 
 // function randomNumber() {
 //     let x = 15;
@@ -86,5 +82,86 @@ function myFunction() {
 
 // Vraag 4.4
 
+// var names = document.getElementById("groep");
+// function namenGroep(namen) {
+//   var x = console.log(namen);
+//   return x * 2;
+// }
+
+// var names = document.getElementById("#namenGroep");
+// const namen = [" Madhwi ", " Esther ", " Luisa ", " Nathan "]
+// const nummers = [ 1, 2, 3, 4 ]
+// function Madhwi() {
+//   let x = namenGroep.value;
+//   let nummers = (Math.round()* namen.length)
+//   // console.log(Math.round()* namen.length)
+// }
+
+// const groep = document.getElementById("groep")
+
+// groep.addEventListener("change", (Madhwi) => {
+// console.log("Madhwi")
+// })
+
+//4.4 oefenen
+// document.getElementById("myButton").onclick = function() {
+
+//  var name = document.getElementById("groep").value
+//  console.log("Hello", name)
+// }
+
+// var namenGroep = [ Madhwi, Esther, Luisa, Nathan]
+
+
+
+
+//loops
+
+let array = [ "Blink", 182]
+for (const index in array)
+console.log(index)
+
+let array_2 = [ "Blink", 182]
+for (const item of array_2) {
+  console.log(item)
+}
+
+
+// // let bugsInCode = 1;
+// // while (bugsInCode > 0) {
+// //   console.log(bugsInCode)
+// //   bugsInCode += 2
+// //   if(bugsInCode == 3) continue;
+// //   bugsInCode -= 1
+// //   if(needSleep) break;
+// // }
+
+// let pets = [ "Bird", "Dog", "Cat"]
+// console.log(pets.shift() + " escaped!")
+// console.log(pets.pop() + " escaped!")
+// console.log(pets)
+// console.log(pets.unshift("Bird"))
+// console.log(pets.push("Cat"))
+// console.log(pets)
+
+const pets = [ "Bird", "Dog", "Cat"]
+const outdoorPets = pets.slice(1)
+pets.splice(1, 2, "cat", "Dog")
+outdoorPets.sort()
+pets.forEach(pet => console.log(`My very own ${pet}`))
+const favoritePets = pets.map(pet => `My favorite ${pet}`)
+
+
+const numberArray = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+console.log(numberArray)
+
+const fruitArray = [ "Appel", "Aardbei", "Mango", "Banaan", "Kiwi"]
+console.log(fruitArray)
+console.log(fruitArray.splice(0, 2, ))
+
+function randomNumber_1() {
+let number = Math.floor(Math.random()* numberArray.length)
+console.log(numberArray)
+}
 
 

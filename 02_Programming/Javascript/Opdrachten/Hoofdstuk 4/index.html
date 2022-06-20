@@ -1,79 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <script src="./main.js" defer></script>
     <title>Hoofdstuk 4 functions</title>
-</head>
-<body>
-
+  </head>
+  <body>
     <!-- vraag 2+3+4+5 -->
-<div>
-   
- <button onclick="pressButton()">This is a button</button> <br>
-</div> <br>
+    <div><button onclick="pressButton()">This is a button</button> <br /></div>
+    <br />
 
- <div>
-    Vraag 2: <input id="firstInputElement" type="text" oninput= "getText(value)">
-</div>
+    <div>
+      Vraag 2:
+      <input id="firstInputElement" type="text" oninput="getText(value)" />
+    </div>
 
-<!-- classname -->
+    <!-- classname -->
 
-<div class="voorbeeld" voorbeeld ></div>
-<div class="voorbeeld" voorbeeld ></div>
-<div class="voorbeeld" voorbeeld ></div>
+    <div class="voorbeeld" voorbeeld></div>
+    <div class="voorbeeld" voorbeeld></div>
+    <div class="voorbeeld" voorbeeld></div>
 
-<p>Hoeveel elementen hebben dezelfde class? (Dit is een voorbeeld van meerdere classnames</p>
-<p id="vraag"></p>
+    <p>
+      Hoeveel elementen hebben dezelfde class? (Dit is een voorbeeld van
+      meerdere classnames
+    </p>
+    <p id="vraag"></p>
 
-<!-- tagname -->
+    <!-- tagname -->
 
-<p>An unordered list:</p>
-<ul>
-  <li>Coffee</li>
-  <li>Tea</li>
-  <li>Milk</li>
-</ul>
+    <p>An unordered list:</p>
+    <ul>
+      <li>Coffee</li>
+      <li>Tea</li>
+      <li>Milk</li>
+    </ul>
 
-<p>The number of li elements in this document is:</p>
-<p id="demo"></p>   
+    <p>The number of li elements in this document is:</p>
+    <p id="demo"></p>
 
-<!-- queryselector and queryselectorAll  -->
+    <!-- queryselector and queryselectorAll  -->
 
-<h4>A h4 element</h4>
-<h3>A h3 element</h3>
+    <h4>A h4 element</h4>
+    <h3>A h3 element</h3>
 
-<div id="container">
-<div class="div1">
-    <p>Dit is een p tag om een voorbeeld te maken van een queryselectorAll.</p>
-    <p>Dit is de tweede p tag om een voorbeeld te maken van queryselectorAll.</p>
-</div>
-</div>
+    <div id="container">
+      <div class="div1">
+        <p>
+          Dit is een p tag om een voorbeeld te maken van een queryselectorAll.
+        </p>
+        <p>
+          Dit is de tweede p tag om een voorbeeld te maken van queryselectorAll.
+        </p>
+      </div>
+    </div>
 
-<!-- element.innerHTML  -->
+    <!-- element.innerHTML  -->
 
+    <p id="oefening1">Klik & delete!</p>
+    <button onclick="myFunction()">Klik dan!</button>
 
+    <!-- 4.2 -->
+    <h1>4.2</h1>
+    <p>Vraag 2: Oninput verandert meteen en onchange niet.</p>
 
-<p id="oefening1">Klik & delete!</p>
-<button onclick="myFunction()">Klik dan!</button>
+    <!-- Vraag 4.3 -->
 
+    <button onclick="randomNumber()">Klik klik klik!</button>
 
-<!-- 4.2 -->
-<h1>4.2</h1>
-<p>Vraag 2: Oninput verandert meteen en onchange niet.</p>
-
-<!-- Vraag 4.3 -->
-
-<button onclick="randomNumber()">Klik klik klik!</button>
-
-<!-- Vraag 4.4 -->
-<br> <br>
-<div>
-    <input style="border-radius: 5px;" type="text" oninput="namenGroep(value)" id="groep">
-</div>
-
-
-</body>
+    <!-- Vraag 4.4 -->
+    <br />
+    <br />
+    <div>
+        <label> Enter your name:</label> <br>
+      <input placeholder="Enter a username"
+        type="text"
+        oninput="namenGroep(value)"
+        id="groep"
+      /> <br>
+      <button type="button" id="myButton">Submit</button>
+    </div>
+  </body>
 </html>
