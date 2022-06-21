@@ -152,6 +152,7 @@ pets.forEach(pet => console.log(`My very own ${pet}`))
 const favoritePets = pets.map(pet => `My favorite ${pet}`)
 
 
+//Opdracht 5.1 start
 const numberArray = [ 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
 console.log(numberArray)
 
@@ -159,9 +160,40 @@ const fruitArray = [ "Appel", "Aardbei", "Mango", "Banaan", "Kiwi"]
 console.log(fruitArray)
 console.log(fruitArray.splice(0, 2, ))
 
-function randomNumber_1() {
-let number = Math.floor(Math.random()* numberArray.length)
-console.log(numberArray)
+const randomNumber_1 = numberArray[Math.floor(Math.random()* numberArray.length)]
+console.log(randomNumber_1)
+
+const numberAndFruit = [numberArray, fruitArray, Math.floor(Math.random()* numberArray.length)]
+console.log(numberAndFruit)
+//opdracht 5.1 finish
+
+
+//  let colors = [ "Red", "Blue", "Green", "Pink", "Yellow"] 
+//  let randColors = colors[Math.floor(Math.random()* colors.length)]
+//  console.log(randColors)
+
+//opdracht 5.2
+const dutchsports = ["Voetbal", "Hockey", "Schaatsen"];
+console.log(dutchsports[0], dutchsports[1], dutchsports[2])
+
+const nlSport = ["Voetbal", "Hockey", "Schaatsen"];
+// for of loop!!!
+for (sport of nlSport) {
+  console.log(sport)
+}
+
+//for in loop!!!
+const nlsport_2 = ["Voetbal", "Hockey", "Schaatsen"];
+for(const i in nlsport_2){
+  console.log(nlsport_2[i])
+}
+
+//for in getallen!!!!
+let getallen = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20]
+for (getallen = 1; getallen < 22; getallen++) {
+  if (getallen % 2 === 0) {
+    console.log(getallen);  
+  }
 }
 
 
