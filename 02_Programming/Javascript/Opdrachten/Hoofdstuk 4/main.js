@@ -387,3 +387,168 @@ if(fruits_1) {
 } else {
   console.log("No Banana.. ")
 }
+
+
+//Objects
+
+//Opdracht 6.1 vraag 1
+// object constructor
+let pet_1 = new Object();
+
+pet_1.naam = "Piet"
+pet_1.soort = "Labrador"
+
+console.log(pet_1)
+
+//Literal constructor
+let pet_2 = {
+  naam : "Klaas",
+  soort : "Duitse herder"
+}
+console.log(pet_2)
+
+//Function constructor
+function pet_3(naam, soort) {
+  this.naam = naam
+  this.soort = soort
+}
+let constructedPet_3 = new pet_3("Jan", "Mopshond")
+console.log(constructedPet_3)
+
+//Singleton constructor
+let Pet_4 = new function() {
+  this.naam = "Spooky",
+  this.soort = "Boxer"
+}
+console.log(Pet_4)
+
+//Class-based constructor
+class pet_5 {
+    constructor(name, soort){
+      this.name = name
+      this.soort = [soort || "Husky"]
+      this.writesBadCode_1()
+    }
+    writesBadCode_1(){
+      console.log(`${this.name}`)
+    }
+  }
+
+  const Husky = new pet_5("Snowball")
+  const Poodle = new pet_5("Superman", "Poodle")
+
+  //object.create 6.1 vraag 2
+
+  const labrador = Object.create(pet_1)
+  labrador.age = 5
+  console.log(labrador)
+
+  const duitseHerder = Object.create(pet_2)
+  duitseHerder.age = 3
+  console.log(duitseHerder)
+
+  const mopshond = Object.create(pet_3)
+  mopshond.age = 2
+  console.log(mopshond)
+
+  const boxer = Object.create(Pet_4)
+  boxer.age = 4
+  console.log(boxer)
+
+  const writesBadCode_1 = Object.create(pet_5)
+  writesBadCode_1.age = 1
+  console.log(writesBadCode_1)
+
+  //6.1 vraag 3
+  const array10 = [
+    {
+      name: "Madhwi",
+      age: 33
+    },
+    {
+      name: "Roshwita",
+      age: 34
+    },
+    { 
+      name: "Priya",
+      age: 34
+    },
+    { 
+      name: "Sangeeta",
+      age: 33
+    },
+    { 
+      name: "Fairuz",
+      age: 32
+    },
+    {
+      name: "Nassira",
+      age: 34
+    },
+    {
+      name: "Vikas",
+      age: 34
+    },
+    {
+      name: "Jane",
+      age: 55
+    },
+    {
+      name: "Kim",
+      age: 37
+    },
+    {
+      name: "Sandhia",
+      age: 38
+    }
+  ]
+  
+  array10.sort(
+    function(a,b) {
+      return a.age - b.age
+    }
+  )
+  console.log(array10)
+
+  //Dit is hetzefde als de bovenste code alleen korter :)
+   // console.log(array10)
+  // array10.sort((a, b) => a.age - b.age);
+
+
+  //Opdracht 6.2
+  class club {
+    constructor(naam, club, leden, ci){
+      this.naam = naam 
+      this.club = club
+      this.leden = leden
+      this.ci = ci
+    }
+  }
+  class contactInfo {
+    constructor(adres, telefoonnummer, contactpersoon){
+      this.adres = adres
+      this.telefoonnummer = telefoonnummer
+      this.contactpersoon = contactpersoon
+    }
+  }
+  const ci = new contactInfo()
+
+  console.log(club)
+  console.log(contactInfo)
+
+  const clubs = ["Club 1:", "Club 2:", "Club 3:", "Club 4:", "Club 5:"]
+  const clubsIterator = clubs[Symbol.iterator]();
+  console.log(clubsIterator.next())
+  console.log(clubsIterator.next())
+  console.log(clubsIterator.next())
+  console.log(clubsIterator.next())
+  console.log(clubsIterator.next())
+
+  for (const ci of clubs){
+    console.log(ci)
+  }
+
+ 
+
+
+  ["PSV", "Ajax", "Feyenoord", "Sparta", "Vitesse"]
