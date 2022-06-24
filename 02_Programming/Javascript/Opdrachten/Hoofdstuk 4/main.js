@@ -82,37 +82,34 @@ console.log(Math.round(0 >= x < 1))
 
 // Vraag 4.4
 
-// var names = document.getElementById("groep");
+// var names = document.querySelector ("#groep");
 // function namenGroep(namen) {
 //   var x = console.log(namen);
 //   return x * 2;
 // }
 
-// var names = document.getElementById("#namenGroep");
-// const namen = [" Madhwi ", " Esther ", " Luisa ", " Nathan "]
-// const nummers = [ 1, 2, 3, 4 ]
-// function Madhwi() {
-//   let x = namenGroep.value;
-//   let nummers = (Math.round()* namen.length)
-//   // console.log(Math.round()* namen.length)
-// }
-
 // const groep = document.getElementById("groep")
 
-// groep.addEventListener("change", (Madhwi) => {
-// console.log("Madhwi")
-// })
 
-//4.4 oefenen
+
+// // //4.4 oefenen
 // document.getElementById("myButton").onclick = function() {
 
 //  var name = document.getElementById("groep").value
 //  console.log("Hello", name)
 // }
 
-// var namenGroep = [ Madhwi, Esther, Luisa, Nathan]
+// var namenGroep = [ "Madhwi", "Esther", "Luisa", "Nathan"]
 
+const names = document.querySelector("#groep")
+function namenGroep(namen){
+  if (names === namen){
+    console.log(namen)
+  }
+  else console.log("Oh no not a member")
+}
 
+const namen = ["Madhwi", "Esther", "Luisa", "Nathan"]
 
 
 //loops
@@ -516,14 +513,7 @@ class pet_5 {
 
 
   //Opdracht 6.2
-  class club {
-    constructor(naam, club, leden, ci){
-      this.naam = naam 
-      this.club = club
-      this.leden = leden
-      this.ci = ci
-    }
-  }
+
   class contactInfo {
     constructor(adres, telefoonnummer, contactpersoon){
       this.adres = adres
@@ -531,24 +521,32 @@ class pet_5 {
       this.contactpersoon = contactpersoon
     }
   }
-  const ci = new contactInfo()
-
-  console.log(club)
-  console.log(contactInfo)
-
-  const clubs = ["Club 1:", "Club 2:", "Club 3:", "Club 4:", "Club 5:"]
-  const clubsIterator = clubs[Symbol.iterator]();
-  console.log(clubsIterator.next())
-  console.log(clubsIterator.next())
-  console.log(clubsIterator.next())
-  console.log(clubsIterator.next())
-  console.log(clubsIterator.next())
-
-  for (const ci of clubs){
-    console.log(ci)
+  class club {
+    constructor(naam, club, leden, conInfo){
+      this.naam = naam 
+      this.club = club
+      this.leden = leden
+      this.conInfo = conInfo
+    }
   }
 
- 
+  const contactAjax = new contactInfo("Laakweg 1", "050462156", "Pietje")
+  const newClub = new club("Ajax", "Voetbalclub", "100", contactAjax)
+  console.log(newClub)
 
+  const contactFeyenoord = new contactInfo("Laakweg 2", "564121874", "Jantje")
+  const newClubFeyenoord = new club("Feyenoord", "Voetbalclub", "100", contactFeyenoord)
+  console.log(newClubFeyenoord)
 
-  ["PSV", "Ajax", "Feyenoord", "Sparta", "Vitesse"]
+  const contactPSV = new contactInfo("Laakweg 3", "564121874", "Marietje")
+  const newClubPSV = new club("PSV", "Voetbalclub", "100", contactPSV)
+  console.log(newClubPSV)
+
+ const contactAZ = new contactInfo("Laakweg 4", "564121874", "Klaasje")
+ const newClubAZ = new club("AZ", "Voetbalclub", "100", contactAZ)
+ console.log(newClubAZ)
+
+ const contactSparta = new contactInfo("Laakweg 4", "564121874", "Hansje")
+ const newClubSparta = new club("Sparta", "Voetbalclub", "100", contactAZ)
+ console.log(newClubSparta)
+
