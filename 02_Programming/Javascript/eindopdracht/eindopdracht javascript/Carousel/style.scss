@@ -11,23 +11,26 @@ body {
     justify-content: center;
     align-items: center;
     min-height: 100vw;
+    background-color: black;
+    overflow: hidden;
     
     
 }
 
 .carousel_container{
-    margin: 0;
+    margin-left: 0;
     
     border: 1px solid black;
 }
 
 .carousel {
-    width: 100vw;
+    width: 40vw;
     height: 100vw;
     position: relative;
     display: flex;
     justify-content: center;
-    align-sitems: center;
+    align-items: center;
+    padding-bottom: 150px;
 
 }
 
