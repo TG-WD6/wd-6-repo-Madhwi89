@@ -34,6 +34,8 @@
 body {
   margin: 0;
   padding: 0;
+  width: 100vw;
+  height: 100vw;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -54,6 +56,9 @@ body {
 }
 
 .carousel {
+  margin-top: 380px;
+  margin-left: 125px;
+  margin-right: 60px;
   width: 40vw;
   height: 100vw;
   position: relative;
@@ -87,6 +92,9 @@ body {
   display: block;
   -o-object-position: center;
      object-position: center;
+  border-radius: 15px;
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .slide[data-active] {
