@@ -12,8 +12,8 @@
 //     console.log(data[1])
 // })
 
-const poke_container = document.getElementById('poke_container');
-const poke_number = 150;
+// const poke_container = document.getElementById('poke_container');
+// const poke_number = 150;
 
 // const getPoke = () => {
 //     const file = 
@@ -36,6 +36,10 @@ const poke_number = 150;
 // }
 // getPoke(1);
 
+const pokedex = document.getElementById("pokedex")
+
+console.log(pokedex)
+
 const fetchPokemon = () => {
     const promises = [];
     for (let i = 1; i <= 150; i++) {
@@ -44,26 +48,42 @@ promises.push(fetch(url).then(( res) => res.json()));
 
 }
 
-Promises.all(promises).then( results => {
-    
-} )
+Promise.all(promises).then( results => {
+const pokemon = results.map(data => ({
 
-.then( data => {
-    console.log(data)
-    
-    const pokemon = {
-        name: data.name,
-        id: data.id,
-        image: data.sprites['front_default'],
-        type: data.types
-            .map((type) => type.type.name).join(', ')
+    name: data.name,
+    id: data.id,
+    image: data.sprites['front_default'],
+    type: data.types
+        .map((type) => type.type.name).join(', ')
 
-    };
-        console.log(pokemon)
+
+    }))
+    displayPokemon(pokemon)
+})
+
+// .then( data => {
+//     console.log(data)
+    
+//     const pokemon = {
+//         name: data.name,
+//         id: data.id,
+//         image: data.sprites['front_default'],
+//         type: data.types
+//             .map((type) => type.type.name).join(', ')
+
+//     };
+//         console.log(pokemon)
         
 
-})
+// })
     
+}
+
+const displayPokemon = (pokemon) => {
+    console.log(pokemon);
+    const pokemonHTML = pokemon.map (pokeman => '<li> <img src = "${pokeman.image}"/> <h2> ${pokeman.id}. ${pokeman.name}<h2> <p>${pokeman.type}</p> </li>')
+    pokedex.innerHTML = pokemonHTML;
 }
 
 fetchPokemon();
