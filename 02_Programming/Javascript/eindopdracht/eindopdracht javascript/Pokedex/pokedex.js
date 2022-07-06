@@ -62,6 +62,17 @@ const pokemon = results.map(data => ({
     displayPokemon(pokemon)
 })
 
+const displayPokemon = (pokemon) => {
+    console.log(pokemon);
+    const pokemonHTML = pokemon.map (pokeman => ` 
+    <img src ="${pokeman.image}"/> 
+    <h2> ${pokeman.id}. ${pokeman.name}</h2> 
+    <p>Type: ${pokeman.type}</p>
+    `).join('')
+
+    pokedex.innerHTML = pokemonHTML;
+}
+
 // .then( data => {
 //     console.log(data)
     
@@ -77,16 +88,6 @@ const pokemon = results.map(data => ({
         
 
 // })
-    
-}
-
-const displayPokemon = (pokemon) => {
-    console.log(pokemon);
-    const pokemonHTML = pokemon.map (pokeman => '<li> <img src = "${pokeman.image}"/> <h2> ${pokeman.id}. ${pokeman.name}<h2> <p>${pokeman.type}</p> </li>')
-    pokedex.innerHTML = pokemonHTML;
-}
-
-fetchPokemon();
 
 
 // pokemon['name'] = data.name
@@ -99,3 +100,11 @@ fetchPokemon();
     // })
 
 //pokemon['type'] = data.types.map(type => type.type.name).join(", ")
+    
+}
+
+
+
+fetchPokemon();
+
+

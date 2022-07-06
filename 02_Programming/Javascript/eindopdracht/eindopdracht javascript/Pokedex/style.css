@@ -7,6 +7,12 @@ body {
   background: #ee9ca7;
   background: -webkit-gradient(linear, left top, right top, from(#ffdde1), to(#ee9ca7));
   background: linear-gradient(to right, #ffdde1, #ee9ca7);
+  font-family: 'Arima';
+  margin: 0;
+}
+
+h1 {
+  letter-spacing: 3px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -17,11 +23,5 @@ body {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  font-family: 'Arima';
-  margin: 0;
-}
-
-h1 {
-  letter-spacing: 3px;
 }
 /*# sourceMappingURL=style.css.map */
