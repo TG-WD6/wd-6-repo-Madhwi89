@@ -1,0 +1,21 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    background-color: purple;
+    overflow: hidden;
+    min-height: 100vw;
+}
+
+
+
+
+.search_container {    
+    display: flex;
+    min-height: 700px;    
+    justify-content: center;
+    align-items: center;
+}
+
