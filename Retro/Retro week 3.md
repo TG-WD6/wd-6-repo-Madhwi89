@@ -1,4 +1,4 @@
-# Retro Week 2
+# Retro Week 3
 
 ## Wat ging goed
 1. De CSS en Sass opdrachten afgerond. 
