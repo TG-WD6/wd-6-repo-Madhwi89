@@ -1,91 +1,65 @@
-const input = "Madhwi"
+let searchResults = document.getElementsByClassName(".search_results");
 
-search.addEventListener("keyup", (e) => {
+let searchButton = document.querySelector(".search_icon");
 
-    const searchInput = document.getElementsByClassName('.search_results')
-    console.log(input)
-})
+searchButton.addEventListener("click", function () {
+  const clickButton = document.getElementById("search");
+  toevoegenStorage(clickButton.value);
+});
 
+const search = document.getElementById("search");
 
+//vergelijking tussen input en storage
+search.oninput = handleInput;
 
+function handleInput(e) {
+  console.log(e);
 
-// // Write a local item..
-// window.localStorage.setItem("myKey", "myValue");
+  let search = e.target.value;
 
-// // Read a local item..
-// var theItemValue = window.localStorage.getItem("myKey");
+  const searchTerms = Object.values(localStorage);
+  const showResults = document.createElement("div");
+  showResults.classList.add("search_results");
+  const searchContainer = document.querySelector(".search_container");
+  searchContainer.lastElementChild.remove()
+  if (search =="") {
+    showResults.style.visibility = "hidden"
+  }
+  else if (search > 0) {
+    search.style.borderBottom = "0px"
+  }
 
-// // Check for changes in the local item and log them..
-// window.addEventListener('storage', function(event) {
-//     console.log('The value for ' + event.key + ' was changed from' + event.oldValue + ' to ' + event.newValue);
-// }, false);
+  for (let x = 0; x < searchTerms.length; x++) {
+    if (searchTerms[x].includes(search) == true) {
+      console.log(searchTerms[x]);
 
-// // Check for HTML5 Storage..
-// function supports_html5_storage() {
-//     try {
-//         return 'localStorage' in window && window['localStorage'] !== null;
-//     } catch (e) {
-//         return false;
-//     }
-// }
+      const spanResult = document.createElement("span");
+      spanResult.textContent = searchTerms[x];
+      showResults.appendChild(spanResult);
+      console.log(showResults);
+    }
+  }
+  
+  searchContainer.appendChild(showResults);
+  console.log(searchContainer);
+}
 
-// const searchOptions = [
-//     {'Techgrounds'},
-//     {'Webdeveloper'},
-//     {'HTML'},
-//     {'CSS'},
-//     {'Javascript'}
-// ]
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// const searchInput = document.getElementById('search')
-
-// const results = document.getElementById('search_results')
-
-// searchInput.addEventListener('keyup', (event) => {
-//     const { value } = event.target
+function toevoegenStorage(input) {
+  
+  const key = localStorage.length+1
+  if (localStorage.length ==0) {
     
+  localStorage.setItem(key, input); 
+}
+else {
+    for (const index in localStorage) {
+        if (localStorage[index] ===input){
+            return
+        }
+        else {
+            localStorage.setItem(key, input)
+        }
+    }
+}
 
-
-// const searchQuery = value.toLowerCase();
-
-// for (const nameElement of results) {
-//     // store name text and convert to lowercase
-//     let name = nameElement.textContent.toLowerCase();
-
-//     // compare current name to search input
-//     if (name.includes(searchQuery)) {
-//         // found name matching search, display it
-//         nameElement.style.display = "block";
-//     } else {
-//         // no match, don't display name
-//         nameElement.style.display = "none";
-//     }
-// }
-// });
-
-
-
-// searchInput.addEventListener('input', () => {
-    
-//     console.log(searchTopics)
-// })
-
-// let searchButton = document.querySelector(".search_icon")
-
-// searchButton.addEventListener("click", function(){
-//     alert("adsf")
-// })
-
+}
