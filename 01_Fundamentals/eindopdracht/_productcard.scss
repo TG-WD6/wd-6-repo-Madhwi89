@@ -1,0 +1,94 @@
+*,
+*::after,
+*::before {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.container_product {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 20px;
+
+  img {
+    cursor: pointer;
+  }
+}
+
+.content_beschrijving {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: 0px;
+  font-family: arial, helvetica, sans-serif;
+
+  h5 {
+    margin-bottom: 0;
+    font-weight: lighter;
+  }
+
+  h4 {
+    margin-top: 0;
+  }
+}
+
+.content {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -ms-flex-direction: column;
+  flex-direction: column;
+  margin: 0;
+  padding: 0;
+  margin-left: 20px;  
+
+  h1 {
+    color: red;
+    font-family: arial, helvetica, sans-serif;
+    font-weight: lighter;
+  }
+
+  h3 {
+    color: green;
+    font-weight: lighter;
+    font-size: 12px;
+  }
+
+}
+
+.product_1 {margin-left: ;}
+
+.winkelwagen_button {
+  background-color: yellow;
+  width: 50px;
+  cursor: pointer;
+}
+
+sup {
+  position: relative;
+  top: 2px;
+  font-size: 18px;
+}
+
+.container_media {
+  @media (max-width: 700px) {
+    display: flex;
+    flex-wrap: wrap;
+
+  }
+}

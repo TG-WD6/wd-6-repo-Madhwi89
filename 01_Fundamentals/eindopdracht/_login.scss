@@ -1,0 +1,55 @@
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  
+}
+
+
+.login {
+  border: 1px solid black;
+  font-family: Arial, Helvetica, sans-serif;
+  margin: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  background: white;
+  text-align: center;
+  width: 320px;
+
+  & p {
+    color: lightgrey;
+  }
+
+  & a {
+    margin-left: 30px;
+  }
+
+  @media (min-width: 700px) {}
+}
+
+
+
+input {
+  border-top: none;
+  border-left: none;
+  border-right: none;
+}
+
+.login_icon {
+  width: 100px;
+  height: auto;
+  margin-top: 20px;
+}
+
+.login_button {
+  width: 250px;
+  text-align: center;
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 3px;
+  cursor: pointer;
+  font-size: 2em;
+}

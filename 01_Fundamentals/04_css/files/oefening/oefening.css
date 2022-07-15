@@ -1,0 +1,73 @@
+/*productcard*/
+
+.test_container {
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+
+.winkelwagen_button {
+    background-color: yellow;
+}
+
+/*login*/
+
+input {
+    border-top: none;
+    border-left: none;
+    border-right: none;
+
+}
+
+.login_2 {
+    color: lightgray;
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.login_button {
+    background-color: blue;
+    width: 60%;
+}
+
+.container_login {
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/*footer*/
+
+.footer {
+    max-width: 1170px;
+    background-color: antiquewhite;
+    margin: auto;
+}
+
+ul {list-style: none;}
+
+.container_footer { padding: 70px 0;}
+
+.row { display: flex;
+flex-wrap: wrap;}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+
+}
+
+h4 {margin-left: 40px;}
+
+.social_links { display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+margin-left: 40px; }
